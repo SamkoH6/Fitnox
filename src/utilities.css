@@ -1,0 +1,341 @@
+:root {
+  --primary-color: #db5902;
+}
+
+/* Utilities */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  border: none;
+  transition: 0.2s;
+  font-size: 14px;
+  transition: 0.2s;
+  font-weight: 500;
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  background-color: #000;
+  border: solid 1px #fff;
+  color: #fff;
+}
+
+.big_btn {
+  padding: 14px 70px;
+  font-size: 16px;
+}
+
+.btn_black {
+  background: #000;
+}
+
+.btn_black a {
+  color: #fff;
+}
+
+.btn_black:hover {
+  background: #333;
+}
+
+.border-black {
+  border: 1px solid #000;
+}
+
+/* Underline */
+.underline {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff; /* Underline color */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.underline:hover {
+  width: 100%;
+}
+
+.underline:hover::after {
+  width: 100%;
+}
+
+/* Dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  padding: 40px 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 10;
+}
+
+/* Dropdown styles */
+.dropdown-btn:hover .dropdown,
+.dropdown-btn:hover + .dropdown,
+.dropdown:hover {
+  display: block;
+}
+
+.border-side {
+  border: 1px solid #fff;
+}
+
+.separator {
+  height: 1px;
+  padding: 3px;
+  margin-right: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.bars {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+  z-index: 15; /* Ensure the overlay is above other elements */
+}
+
+/* Add brightness to the overlay to darken the background */
+.overlay-dark {
+  filter: brightness(70%); /* Adjust the brightness value as needed */
+}
+
+.card {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40px 20px;
+  padding: 40px;
+  align-items: start;
+}
+
+.bg_white {
+  background: #fff;
+}
+
+.bg_white a {
+  color: #000;
+}
+
+.bg_black {
+  background: #000;
+  color: #fff;
+}
+
+.bg_black a {
+  color: #fff;
+}
+
+.card.active {
+  background: #fff;
+  color: #000;
+}
+
+.card.active div a {
+  color: #000;
+}
+
+.big {
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.big p {
+  padding: 20px 0;
+}
+
+.small {
+  padding: 20px;
+  width: 33%;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  transition: 0.2s;
+  border-top: 1px solid #fff;
+}
+
+.small p {
+  padding: 10px 0;
+}
+
+.small .small-underline a {
+  color: rgba(0, 0, 0, 0);
+}
+
+.small a {
+  display: none;
+}
+
+.small .small-underline a {
+  display: block;
+}
+
+.card.inactive {
+  display: none;
+}
+
+.card.active {
+  display: flex; /* or whatever display property you want for the active card */
+}
+
+.sp1 {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.sp2 {
+  position: absolute;
+  display: block;
+  top: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.sp3 {
+  position: absolute;
+  display: block;
+  top: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.small-underline a {
+  color: rgba(0, 0, 0, 0);
+}
+
+/* .card1 {
+  background: #fff;
+  color: #000;
+}
+
+.card1 .small-underline a {
+  color: #000;
+} */
+
+.card h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card .underline::after {
+  background: #000;
+}
+
+.cards-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+  top: 40%;
+  padding: 0 10px;
+}
+
+.location-card,
+.clubs-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  align-items: start;
+  width: 400px;
+  height: auto;
+  max-height: 400px;
+  box-shadow: none;
+}
+
+.location-card {
+  display: none;
+}
+
+.location-card img {
+  width: 100%;
+  height: 200px;
+}
+
+.location-card h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.location-card p {
+  padding: 0;
+  margin: 0;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background: #fff;
+  color: #000;
+  padding: 20px 0;
+}
+
+.footer h1,
+.footer p {
+  cursor: pointer;
+}
+
+.footer .flex nav a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer .flex a:hover {
+  color: #000;
+}
+
+.social-icon {
+  padding-left: 10px;
+  color: #000;
+  font-size: 40px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}

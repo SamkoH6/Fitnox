@@ -1,0 +1,77 @@
+/* TableComponent.css */
+
+.table-container {
+  padding: 50px 10px;
+}
+
+table {
+  width: 100%;
+  color: #fff;
+  border-collapse: separate;
+  border-spacing: 0; /* Add border-spacing instead of border-collapse */
+}
+
+th {
+  background: #000;
+  padding-bottom: 30px;
+  font-weight: 400;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(
+    33,
+    33,
+    37
+  ); /* Slightly lighter background color for even rows */
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+  border-right: none; /* Remove border between columns */
+}
+
+td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+th:first-child {
+  width: 30%; /* Set the width for the first column */
+}
+
+td:first-child {
+  text-align: left;
+  padding-left: 60px;
+}
+
+/* Clenstvo Section */
+.clenstvo-section {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.clenstvo-section-pic {
+  padding: 100px;
+}
+
+.clenstvo_card {
+  height: 500px;
+}
+
+.clenstvo-section p {
+  padding: 50px 0;
+}

@@ -1,0 +1,187 @@
+@media (max-width: 851px) {
+  header {
+    aspect-ratio: 5/8;
+  }
+
+  .text-overlay {
+    top: 30%;
+    text-align: left; /* Center the text */
+    padding-left: 20px;
+    z-index: 1; /* Place the text above the image */
+  }
+
+  .text-overlay h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+
+  .text-overlay p {
+    padding: 40px 0;
+    font-size: 1.2rem;
+  }
+
+  section {
+    aspect-ratio: 5/8;
+    position: relative;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .card h1 {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .big {
+    width: 250px;
+    height: 330px;
+  }
+
+  .big p {
+    padding: 5px 0;
+  }
+
+  .big a {
+    font-size: 15px;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .card2,
+  .card3 {
+    display: none;
+  }
+
+  .small {
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    color: #000;
+  }
+
+  .small a {
+    display: block;
+  }
+
+  .cards-row {
+    display: flex;
+    top: 0%;
+    padding: 0 10px;
+  }
+
+  .card1 {
+    display: none;
+  }
+
+  .next_card,
+  .previous_card {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+  }
+
+  .next_card {
+    right: 6%;
+  }
+
+  .previous_card {
+    left: 6%;
+  }
+
+  .app_card {
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .clubs-near {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+  }
+
+  .clubs-card {
+    width: 100%;
+    align-items: center;
+  }
+
+  .clubs-card p {
+    padding: 20px 0;
+  }
+
+  .locations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location-card {
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .locations h2 {
+    font-weight: 540;
+    padding: 10px 0;
+  }
+
+  .location-card {
+    width: 100%;
+    display: none;
+  }
+
+  .location-card img {
+    margin: 0 40px;
+    width: 400px;
+    height: 250px;
+  }
+
+  .clubs_section {
+    aspect-ratio: 6/4;
+  }
+
+  .nav-mobile {
+    width: 40%;
+  }
+
+  footer .flex {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  footer nav,
+  footer .social {
+    padding-top: 10px;
+  }
+
+  /* Clenstvo */
+  td:first-child {
+    padding-left: 10px;
+  }
+
+  .clenstvo-section {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .clenstvo_card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    padding-top: 0px;
+  }
+
+  .clenstvo-section-pic {
+    padding: 0px;
+    width: 300px;
+    align-self: center;
+  }
+}
